@@ -22,7 +22,7 @@ public class Transaction {
 
     @ManyToOne
     @JoinColumn(name = "source_account_id" , nullable = false)
-    private Account SourceAccount;
+    private Account sourceAccount;
 
     @ManyToOne
     @JoinColumn(name = "target_account_id" , nullable = false)
