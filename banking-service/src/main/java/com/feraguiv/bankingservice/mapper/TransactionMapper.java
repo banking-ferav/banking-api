@@ -4,6 +4,9 @@ import com.feraguiv.bankingservice.model.dto.TransactionReportDTO;
 import com.feraguiv.bankingservice.model.dto.TransactionRequestDTO;
 import com.feraguiv.bankingservice.model.dto.TransactionResponseDTO;
 import com.feraguiv.bankingservice.model.entity.Transaction;
+
+import lombok.AllArgsConstructor;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
@@ -12,14 +15,10 @@ import java.util.List;
 
 
 @Component
+@AllArgsConstructor
 public class TransactionMapper {
 
     private final ModelMapper modelMapper;
-
-
-    public TransactionMapper(ModelMapper modelMapper) {
-        this.modelMapper = modelMapper;
-    }
 
     public Transaction convertToEntity(TransactionRequestDTO transactionDTO){
 

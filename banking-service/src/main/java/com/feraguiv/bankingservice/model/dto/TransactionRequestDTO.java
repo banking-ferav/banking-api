@@ -15,9 +15,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class TransactionRequestDTO {
 
-
-    private Long id;
-
     @NotNull(message = "El numero de la cuenta de origen no puede estar vacío")
     private String sourceAccountNumber;
 
